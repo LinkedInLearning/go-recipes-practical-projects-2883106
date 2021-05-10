@@ -1,0 +1,42 @@
+{
+  "lastCheckTime": "2016-01-22 04:32:49 PM",
+  "stations": [
+    {
+      "id": 3,
+      "name": "station 3",
+      "status": "Active",
+      "statusKey": 1,
+      "lastCheck": {
+        "time": "2016-01-22 04:30:15 PM",
+        "success": true
+      }
+    },
+    {
+      "id": 1,
+      "name": "station 2",
+      "status": "Active",
+      "lastCheck": {
+        "time": "2016-01-22 04:32:41 PM",
+        "success": true
+      }
+    },
+    {
+      "id": 4,
+      "name": "station 4",
+      "status": "Inactive",
+      "lastCheck": {
+        "time": "2016-01-22 04:29:41 PM",
+        "success": false
+      }
+    },
+    {
+      "id": 5,
+      "name": "station 5",
+      "status": "Active",
+      "lastCheck": {
+        "time": "2016-01-22 04:32:33 PM",
+        "success": true
+      }
+    }
+  ]
+}
