@@ -1,0 +1,93 @@
+: 1542735806:0;ls
+: 1542735815:0;git mv regression_test.go _regression_test.go
+: 1542735817:0;go test -v ./...
+: 1542735907:0;ls ls
+: 1542735908:0;ls
+: 1542735910:0;git st
+: 1542735915:0;git ci -m 'disable for now'
+: 1542735918:0;git push
+: 1542735969:0;cd
+: 1542735969:0;ls
+: 1542735970:0;git st
+: 1542735972:0;git diff
+: 1542736031:0;ls
+: 1542736117:0;vim
+: 1542736226:0;ls
+: 1542783981:0;e go.mod
+: 1542784001:0;git st
+: 1542784008:0;git co -- go.mod go.sum
+: 1542784009:0;git st
+: 1542784259:0;ls
+: 1542784272:0;git add go.mod
+: 1542784277:0;git ci -m 'adding go.mod'
+: 1542784278:0;git push
+: 1542784308:0;ls
+: 1542784310:0;go test
+: 1542784314:0;go test -v
+: 1542784386:0;which gometalinter
+: 1542784393:0;vim +GoInstallBinaries
+: 1542786139:0;go run scripts/gen_session_env.go
+: 1542786218:0;go run scripts/gen_session_env.go -h
+: 1542805924:0;go run ./cmd/framesd -h
+: 1542806004:0;docker build -f cmd/framesd/Dockerfile .
+: 1542896268:0;go run ../../_t/write_session.go
+: 1542896857:0;make test
+: 1542898478:0;go help mod
+: 1542898485:0;go help install
+: 1542898509:0;go install -mod=vendor 
+: 1542898577:0;make test
+: 1542900226:0;go help mod
+: 1542900229:0;go mod tidy
+: 1542900234:0;git mod vendor
+: 1542900239:0;go mod vendor
+: 1542900240:0;git st
+: 1543162392:0;go vet ./
+: 1543162611:0;go test -v
+: 1543162631:0;ls
+: 1543163314:0;go help format
+: 1543163319:0;go help fmt
+: 1543163329:0;go doc fmt
+: 1543163416:0;ls
+: 1543213433:0;go run ./cmd/framesd/framesd.go --httpAddr :8087 _t/config.yaml
+: 1543213440:0;go run ./cmd/framesd/framesd.go --httpAddr :8087 -config _t/config.yaml
+: 1543213716:0;cd frames
+: 1543213718:0;docker ps
+: 1543222707:0;go test -v ./integration_test.go
+: 1543222964:0;go test -v ./integration_test.go
+: 1543222973:0;cat _t/session.sh
+: 1543224695:0;go test -v ./integration_test.go
+: 1543225765:0;go test -v ./integration_test.go
+: 1543226936:0;e integration_test.go
+: 1543227863:0;go test -v ./integration_test.go
+: 1543228705:0;go test -v ./integration_test.go
+: 1543229138:0;go test -v ./integration_test.go
+: 1543229513:0;ls
+: 1543229588:0;go test -v ./integration_test.go
+: 1543229596:0;wc -l /tmp/frames-e2e728952593/*
+: 1543229836:0;go test -v ./integration_test.go
+: 1543230228:0;go test -v ./integration_test.go
+: 1543230431:0;git add integration_test.go
+: 1543241514:0;go test -v /tmp/t_test.go
+: 1543241757:0;go test -bench . -v /tmp/t_test.go
+: 1543242116:0;make test
+: 1543244476:0;go help fmt
+: 1543244481:0;go doc fmt
+: 1543245568:0;go run fmt.go
+: 1543258088:0;go run fmt.go
+: 1543258197:0;ls
+: 1543258204:0;go run fmt.go
+: 1543258218:0;e fmt.go
+: 1543258244:0;go run fmt.go
+: 1543300433:0;git co master
+: 1543300728:0;go test -bench . -v /tmp/t_test.go
+: 1543300752:0;git log -p
+: 1543300759:0;e backends/kv/writer.go 
+: 1543300806:0;make test
+: 1543317563:0;go run ./cmd/framesd -h
+: 1543323103:0;ls
+: 1543324617:0;go run ./cmd/framesd -h
+: 1543324621:0;go run ./cmd/framesd -verison
+: 1543324815:0;go build -ldflags="-X main.Version=0.1.0" ./cmd/framesd
+: 1543324838:0;ls
+: 1543324919:0;ps
+: 1543324932:0;top -p 1155
